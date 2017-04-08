@@ -37,8 +37,8 @@ html, body{
 }
 
 .round-button-circle {
-    width: 45vh;
-    height: 45vh;
+    width: 40vh;
+    height: 40vh;
     border-radius: 50%;
 
     display: flex;
