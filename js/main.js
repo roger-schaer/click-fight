@@ -19,6 +19,13 @@ function startTimer(duration, display) {
             clearInterval(interval);
             $("#button").off('click');
             $("#congrats").show();
+
+            $.post('https://api.telegram.org/bot349061307:AAH2s3gMeu-LFIoNE-fVWvlgK1pfLUjYlQY/setGameScore?user_id=' + getParameterByName('userId')
+                + '&score=' + parseInt($("#score").text()
+                + '&inline_message_id=' + getParameterByName('inlineMessageId')
+                ), function(data){
+                console.log(data);
+            });
         }
     }, 1000);
 }
