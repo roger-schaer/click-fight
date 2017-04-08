@@ -27,7 +27,7 @@ function startTimer(duration, display) {
                     console.log(data);
                 });
         }
-    }, 100);
+    }, 1000);
 }
 
 $(function(){
